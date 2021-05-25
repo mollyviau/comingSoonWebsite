@@ -1,0 +1,81 @@
+/* css variables */
+:root {
+    --main-colour: #1d1d1d;
+    --light-colour: #e4e4e4;
+    --blue-colour: #3E78B2;
+    --red-colour: #E54B4B;
+    --purple-colour: #CB769E;
+    --footer-height: 100px;
+    --footer-height-negative: -100px;
+}
+
+html {
+    height:100%;
+}
+body {
+    background-color: var(--main-colour);
+    font-family:Arial, Helvetica, sans-serif;
+    color: var(--light-colour);
+    height:60%;
+}
+
+#main {
+    min-height: 100%;
+    margin-bottom: var(--footer-height-negative);
+    position: relative;
+}
+
+.text {
+ display:flex;
+ align-items:center;
+ justify-content: center;
+ letter-spacing: 1px;
+ margin-top: 11em;
+}
+
+.nameText {
+    text-transform: uppercase;
+    font-size: 1.4em;
+    margin-bottom: 0.3em;
+}
+
+.titleText {
+    font-size: 4em;
+    margin-top: 0em;
+    margin-bottom: 0.3em;
+}
+
+.extraText {
+    font-size: 1em;
+    padding-top: 0px;
+    margin-top: 0em;
+}
+
+.clearfooter {
+    height: var(--footer-height);
+    clear:both;
+}
+
+#footer {
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    margin-bottom: 5rem;
+    height: var(--footer-height);
+    position:relative;
+}
+
+.fab, .fas {
+    color: var(--light-colour);
+    text-decoration: none;
+    margin: 1rem;
+  }
+  
+  .fab:hover:hover, .fas:hover:hover{
+      opacity: 0.7;
+  }
+
+  a.fab.fa-github, a.fab.fa-linkedin, a.fas.fa-envelope {
+    font-size: 2.5rem;
+}
+
